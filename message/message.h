@@ -15,6 +15,7 @@ typedef unsigned int MessageLen;
 enum MessageType
 {
 	ON_PING_MESSAGE = 0,
+	ON_REGISTER_MESSAGE,
 	ON_DATA_MESSAGE,
 }
 
@@ -55,7 +56,8 @@ public:
 private:
 	MessageID _GenerateMessageId();
 	Sstr _MessageData;
-
+	MessageOper *_MessageOper;
+	
 };
 
 class PingMessage : public Message
