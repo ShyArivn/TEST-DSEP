@@ -20,7 +20,7 @@ public:
 	virtual void Post(Message *message);
 	virtual void BroadCast(Message *message);
 
-	void PushToRoleList(MessageRole *role);
+	void run();
 
 protected:
 	virtual void _Push(Message *message);

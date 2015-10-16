@@ -15,6 +15,7 @@ class MessageRole
 
 public:
 	MessageRole();
+	MessageRole()
 	~MessageRole();
 	std::string GenerateRoleID();
 
@@ -33,6 +34,13 @@ public:
 private:
 	std::map<std::string, util::LinkList> _RoleMap;
 };
+
+static MessageRoleMap SMesssageRoleMap;
+
+static MessageRoleMap& GetMessageRoleMap()
+{
+	return MessageRoleMap;
+}
 
 }
 

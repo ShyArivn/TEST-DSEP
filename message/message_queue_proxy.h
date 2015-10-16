@@ -17,7 +17,6 @@ public:
 	void ProxyPost(Message *message);
 	void ProxyBroadcast(Message *message);
 
-	
 };
 
 }

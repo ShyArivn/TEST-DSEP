@@ -16,7 +16,7 @@ class QueueRegister
 public:
 	QueueRegister();
 	~QueueRegister();
-	void RegisterIntoMQ();
+	void RegisterIntoMQ(MessageQueue *mq);
 
 private:
 	std::hash_map<Sstr, MessageQueue *> _MessageQueues;
